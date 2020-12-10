@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap');
+
+:root{
+    --primary-color: #f7f7ee;
+    --secondary-color: #1f1f1f;;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    background-color: var(--primary-color);
+}
+
+#nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2020;
+    width: 100%;
+}
+.bg_scroll_color{
+    background-color: #feca1b;
+}
+
+#nav a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+#nav a.router-link-exact-active {
+    color: var(--primary-color);
+}
+
+#welcome-header{
+    background: linear-gradient(14deg, #ff5722,#fbd657);
+}
+#sobre-header{
+    background: linear-gradient(14deg, #ff5722,#fbd657);
+}
+#detalhes-header{
+    background: linear-gradient(14deg, #ff5722,#fbd657);
+}
+
+#main{
+    box-shadow: 0px 0px 7px #00000073 inset;
+}
+
+#master-ball{
+    background: radial-gradient(#C182F4, transparent);
+}
+
+#ultra-ball{
+    background: radial-gradient(#6D87A3, transparent);
+}
+
+#poke-ball{
+    background: radial-gradient(#ff9567, transparent);
+}
+
+.bg-pokeballs img{
+    width: 120px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 12px #00000030;
+    -webkit-user-drag: none;
+}
+
+.bg-pokeballs img:hover{
+    animation-name: pokeballRotate;
+    animation-timing-function: ease-in-out;
+    animation-duration: 0.5s;
+}
+.c-card{
+    user-select: none;
+    cursor: pointer;
+    box-shadow: 0 0 4px #00000033;
+    background: linear-gradient(45deg, #2196f3, #00BCD4);
+    transition: 0.2s transform, filter;
+}
+.c-card:hover{
+    filter: brightness(1.1);
+    transform: scale(1.04);
+}
+#pagination-column{
+    position: sticky;
+    z-index: 1;
+    bottom: 0;
+}
+
+/* Tipos aqui */
+.types-container{
+    font-size: 90%;
+    display: inline-flex;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 20px;
+    border: 1px solid #0000003b;
+}
+.types-container.normal{
+    background-color: #A8A878;
+}
+.types-container.fire{
+    background-color: #F08030;
+}
+.types-container.fighting{
+    background-color: #C03028;
+}
+.types-container.water{
+    background-color: #03a9f4;
+}
+.types-container.flying{
+    background-color: #A890F0;
+}
+.types-container.grass{
+    background-color: #8bc34a;
+}
+.types-container.poison{
+    background-color: #A040A0;
+}
+.types-container.electric{
+    background-color: #F8D030;
+}
+.types-container.ground{
+    background-color: #E0C068;
+}
+.types-container.psychic{
+    background-color: #F85888;
+}
+.types-container.rock{
+    background-color: #B8A038;
+}
+.types-container.ice{
+    background-color:#98D8D8;
+}
+.types-container.bug{
+    background-color:#A8B820;
+}
+.types-container.dragon{
+    background-color:#7038F8;
+}
+.types-container.ghost{
+    background-color:#705898;
+}
+.types-container.dark{
+    background-color: #705848;
+}
+.types-container.steel{
+    background-color: #B8B8D0;
+}
+.types-container.fairy{
+    background-color: #EE99AC;
+}
+/* Fim dos tipos */
+
+#footer{
+    background: linear-gradient(14deg,  #5fdde5, #03a9f4);
+}
+
+.zIndex-2{
+    z-index: 2;
+}
+
+@media screen and (max-width: 575px) and (orientation: portrait){
+    .c-card{
+        max-width: 100% !important;
+    }
+}
+
+@keyframes pokeballRotate {
+    0%{transform: rotate(0deg);}
+    20%{transform: rotate(-10deg);}
+    40%{transform: rotate(10deg);}
+    50%{transform: rotate(0deg);}
+}
